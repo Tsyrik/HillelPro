@@ -1,4 +1,4 @@
-package Task03;
+package Lesson002.Task03;
 
 import java.util.ArrayList;
 
@@ -41,7 +41,7 @@ public class Main {
     public static ArrayList<Double> getAnnualSum() {
         ArrayList<Double> sum = new ArrayList<Double>();
         for (int i = 0; i < depositData.size(); i++) {
-            if (i == 0 || i % 12 == 0) {
+            if (i % 12 == 0) {
                 sum.add(depositData.get(i));
             }
 

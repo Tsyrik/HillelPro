@@ -1,4 +1,4 @@
-package Task02;
+package Lesson002.Task02;
 
 import java.util.ArrayList;
 import java.util.Locale;
