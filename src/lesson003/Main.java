@@ -1,4 +1,4 @@
-package Lesson003.Task001;
+package lesson003;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -8,22 +8,47 @@ public class Main {
     static Scanner scan = new Scanner(System.in);
 
     public static void main(String[] args) {
-        subtask001();
-        subtask002();
-        subtask003();
-        subtask004();
-        subtask005();
-        subtask006();
-        subtask007();
-        subtask008();
-        subtask009();
-        subtask010();
-        subtask011();
-        subtask012();
-        subtask013();
+        System.out.println("Task 1:");
+        printFrom1to99WithFor();
+
+        System.out.println("Task 2:");
+        findFactorialWithFor();
+
+        System.out.println("Task 3:");
+        printFrom1to99WithWhile();
+
+        System.out.println("Task 4:");
+        findFactorialWithWhile();
+
+        System.out.println("Task 5:");
+        printFrom1to99WithDoWhile();
+
+        System.out.println("Task 6:");
+        findFactorialWithDoWhile();
+
+        System.out.println("Task 7:");
+        findXPowN();
+
+        System.out.println("Task 8:");
+        printSequence();
+
+        System.out.println("Task 9:");
+        multiplicationTable();
+
+        System.out.println("Task 10:");
+        oddNumbers();
+
+        System.out.println("Task 11:");
+        findMinInArray();
+
+        System.out.println("Task 12:");
+        findMaxInArray();
+
+        System.out.println("Task 13:");
+        switchMaxAndMinInArray();
     }
 
-    private static void subtask001() {
+    private static void printFrom1to99WithFor() {
         for (int i = 1; i < 100; ++i) {
             if (i % 2 == 0) {
                 System.out.println(i);
@@ -31,7 +56,7 @@ public class Main {
         }
     }
 
-    private static void subtask002() {
+    private static void findFactorialWithFor() {
         int n = 5;
         int factorial = 1;
         for (int i = 1; i <= n; ++i) {
@@ -40,7 +65,7 @@ public class Main {
         System.out.println(factorial);
     }
 
-    private static void subtask003() {
+    private static void printFrom1to99WithWhile() {
         int i = 1;
         while (i <= 99) {
             if (i % 2 == 0) {
@@ -50,7 +75,7 @@ public class Main {
         }
     }
 
-    private static void subtask004() {
+    private static void findFactorialWithWhile() {
         int n = 5;
         int factorial = 1;
         int i = 1;
@@ -61,7 +86,7 @@ public class Main {
         System.out.println(factorial);
     }
 
-    private static void subtask005() {
+    private static void printFrom1to99WithDoWhile() {
         int i = 1;
 
         do {
@@ -72,7 +97,7 @@ public class Main {
         } while (i < 99);
     }
 
-    private static void subtask006() {
+    private static void findFactorialWithDoWhile() {
         int n = 5;
         int factorial = 1;
         int i = 1;
@@ -85,7 +110,7 @@ public class Main {
         System.out.println(factorial);
     }
 
-    private static void subtask007() {
+    private static void findXPowN() {
         int x = 2;
         int n = 5;
         System.out.println(x + "^" + n + " = " + Math.pow(x,n));
@@ -99,7 +124,7 @@ public class Main {
         System.out.println(x + "^" + n + " = " + result);
     }
 
-    private static void subtask008() {
+    private static void printSequence() {
         int number = 0;
         int difference = -5;
         for (int i = 0; i < 10; i++) {
@@ -109,7 +134,7 @@ public class Main {
         System.out.println("");
     }
 
-    private static void subtask009() {
+    private static void multiplicationTable() {
         System.out.print("Введіть число: ");
         int x = scan.nextInt();
         for (int i = 1; i <= 10; i++) {
@@ -117,7 +142,7 @@ public class Main {
         }
     }
 
-    private static void subtask010() {
+    private static void oddNumbers() {
         int[] arr = new int[10];
         int num = 1;
         for (int i = 0; i < 10; i++) {
@@ -127,7 +152,7 @@ public class Main {
         System.out.println(Arrays.toString(arr));
     }
 
-    private static void subtask011() {
+    private static void findMinInArray() {
         int[] arr = {5, 2, 8, 1, 4};
         int min = arr[0];
         for (int i = 1; i < arr.length; i++) {
@@ -138,7 +163,7 @@ public class Main {
         System.out.println(min);
     }
 
-    private static void subtask012() {
+    private static void findMaxInArray() {
         int[] arr = new int[10];
         int num = 1;
         for (int i = 0; i < 10; i++) {
@@ -154,7 +179,7 @@ public class Main {
         System.out.println(max);
     }
 
-    private static void subtask013() {
+    private static void switchMaxAndMinInArray() {
         int[] arr = {4, -5, 0, 6, 8};
         int minIndex = 0;
         int maxIndex = 0;
