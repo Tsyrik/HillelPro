@@ -15,7 +15,7 @@ public class Cat extends Animals {
         if (distance > 200) {
             System.out.printf("%s can't run that far%n", name);
         } else {
-            System.out.printf("%s ran %s meters", name, distance);
+            System.out.printf("%s ran %s meters%n", name, distance);
         }
     }
 
