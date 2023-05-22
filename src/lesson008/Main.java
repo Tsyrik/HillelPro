@@ -15,7 +15,7 @@ public class Main {
 
         for (int i = 0; i < myArr.size(); i++) {
             String item = myArr.get(i);
-            System.out.println(item);
+            System.out.print(item);
         }
 
         System.out.println();
@@ -27,7 +27,7 @@ public class Main {
 
         for (int i = 0; i < myArr.size(); i++) {
             String item = myArr.get(i);
-            System.out.print(item + ", ");
+            System.out.print(item);
         }
 
     }
